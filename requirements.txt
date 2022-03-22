@@ -1,0 +1,6 @@
+mysql-connector-python
+boto3
+botocore
+python-dotenv
+pymysql
+
