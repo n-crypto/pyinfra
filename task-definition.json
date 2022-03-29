@@ -1,0 +1,37 @@
+{
+    "taskDefinition": {
+        "taskDefinitionArn": "arn:aws:ecs:us-east-2:187010008770:task-definition/infrapy-TD:5",
+        "containerDefinitions": [
+            {
+                "name": "InfrapyContainer",
+                "image": "187010008770.dkr.ecr.us-east-2.amazonaws.com/pyifra-repo:latest",
+                "cpu": 0,
+                "memory": 1024,
+                "portMappings": [],
+                "essential": true,
+                "environment": [],
+                "mountPoints": [],
+                "volumesFrom": []
+            }
+        ],
+        "family": "infrapy-TD",
+        "revision": 5,
+        "volumes": [],
+        "status": "ACTIVE",
+        "requiresAttributes": [
+            {
+                "name": "com.amazonaws.ecs.capability.ecr-auth"
+            }
+        ],
+        "placementConstraints": [],
+        "compatibilities": [
+            "EXTERNAL",
+            "EC2"
+        ],
+        "requiresCompatibilities": [
+            "EC2"
+        ],
+        "cpu": "1024",
+        "memory": "1024"
+    }
+}
